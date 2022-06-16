@@ -1,0 +1,25 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/SansZhu/cloud-config-server-test.git
+          #git@github.com:SansZhu/cloud-config-learn.git
+          #https://github.com/SansZhu/cloud-config-learn.git
+          #ssh://git@github.com:SansZhu/cloud-config-learn.git
+#          force-pull: true
+          username: 707643309@qq.com
+          password: 123adadw
+          default-label: master
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
